@@ -24,7 +24,7 @@ export LIBRARY_PATH="${CUDA_HOME}/lib64:${LIBRARY_PATH}"
 export LD_LIBRARY_PATH="/home/diwu/cudalibs:/usr/lib64/nvidia:${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}"
 
 DATA_DIR=/ivi/ilps/projects/ltl-mt/wmt23-wiki/data_bin_30k
-CHECKPOINT_DIR=xxx
+CHECKPOINT_DIR=/ivi/ilps/projects/ltl-mt/wmt23-wiki/checkpoints_30k/baseline_checkpoint_best.pt
 
 fairseq-train ${DATA_DIR} \
     --save-dir ${CHECKPOINT_DIR} \
